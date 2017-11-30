@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel for wise
+                    Laravel for wise Local
                 </div>
 
                 <div class="links">
