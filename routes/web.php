@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/panel', function () {
+    return view('app');
+});
+
+Route::get('/dashboard', function () {
+    return view('welcome');
+});
