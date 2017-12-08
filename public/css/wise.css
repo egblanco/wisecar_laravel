@@ -9,3 +9,67 @@
 .side-bar-wise{
     margin-top: 20px;
 }
+
+.layout-boxed {
+    background: none;
+}
+
+.content-header-wise{
+    background-color: #55B78A;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: bolder;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+.content-header-wise-action{
+    background-color: #449868;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 12px;
+    padding:3px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.content-header-wise-step{
+    color: #ffffff;
+    font-family: "Roboto Mono Thin";
+    font-size: 15px;
+    padding:3px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.content-header-wise-face{
+    color: #ffffff;
+    font-family: "Roboto Mono Thin";
+
+    padding:10px;
+    text-transform: uppercase;
+    background-color: #3b5998;
+}
+
+.content-header-wise-twt{
+    color: #ffffff;
+    font-family: "Roboto Mono Thin";
+    padding:10px;
+    text-transform: uppercase;
+    background-color: #00aced;
+}
+
+.content-header-wise-gplus{
+    color: #ffffff;
+    font-family: "Roboto Mono Thin";
+
+    padding:10px;
+    text-transform: uppercase;
+    background-color: #db4a39;
+}
+
+label{
+    font-family: "Roboto";
+    text-transform: capitalize;
+}
+

@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/{locale}', function ($locale) {
+    \Illuminate\Support\Facades\App::setLocale($locale);
     return view('index');
 });
 
