@@ -21,5 +21,6 @@ return [
     'pickup' => 'pick up location',
     'pickupdh' => 'pick up Date - Hour',
     'go' => 'Ir',
+    'welcome' => 'welcome to wise rental !!!',
 
 ];

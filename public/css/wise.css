@@ -69,7 +69,23 @@
 }
 
 label{
-    font-family: "Roboto";
+    font-family: "Roboto Mono Thin";
     text-transform: capitalize;
 }
 
+.h1-theme{
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+
+.separator-line{
+    margin-top: 20px;
+    border-top: 1px solid #55B78A;
+}
+
+.p-theme{
+    text-align: justify;
+    font-family: "Roboto Mono Thin";
+}
