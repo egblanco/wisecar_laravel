@@ -12,3 +12,4 @@ yarn-error.log
 .env
 /public/error_log
 error_log
+/public/.htaccess
