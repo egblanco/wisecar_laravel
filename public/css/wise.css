@@ -89,3 +89,7 @@ label{
     text-align: justify;
     font-family: "Roboto Mono Thin";
 }
+
+.content-wrapper {
+    min-height: 100%;
+}

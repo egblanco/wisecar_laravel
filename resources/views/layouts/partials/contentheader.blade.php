@@ -20,6 +20,7 @@
                     <span class="content-header-wise-step">1</span>
                     <span class="content-header-wise-step">2</span>
                     <span class="content-header-wise-step">3</span>
+                    <span class="content-header-wise-step">4</span>
                 </div>
             </div>
             <div class="col-md-3">
