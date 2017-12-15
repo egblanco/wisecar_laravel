@@ -21,6 +21,10 @@ return [
     'pickup' => 'lugar de recogida del auto',
     'pickupdh' => 'Seleccione Fecha - Hora',
     'go' => 'Ir',
+    'returnsame' => 'regresar al mismo lugar',
+    'returndate' => 'fecha - hora de regreso',
+    'carmodel' => 'modelo de carro',
+    'code' => 'codigo',
 
 
 ];

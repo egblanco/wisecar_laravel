@@ -93,3 +93,16 @@ label{
 .content-wrapper {
     min-height: 100%;
 }
+
+.top-car-component{
+    background-color: #a9a9a9;
+
+}
+
+.img-icon{
+    width: 49px;
+}
+
+.img-car-component{
+    width: 200px;
+}

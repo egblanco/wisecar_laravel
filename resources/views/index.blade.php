@@ -23,27 +23,49 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label>@lang('message.pickup')</label>
+                    <label>@lang('message.returnsame')</label>
                     <input class="form-control" type="text">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label>@lang('message.pickupdh')</label>
+                    <label>@lang('message.returndate')</label>
                     <input class="form-control" type="text">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label>@lang('message.pickup')</label>
+                    <label>@lang('message.carmodel')</label>
                     <input class="form-control" type="text">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label>@lang('message.pickupdh')</label>
+                    <label>@lang('message.code')</label>
                     <input class="form-control" type="text">
                 </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="top-car-component">
+                        <span><img src=""><img src="{{asset('/img/icon/cUser.png')}}" class="img-icon"
+                                               alt="User Image"/></span>
+                        <span><img src=""><img src="{{asset('/img/icon/cDir.png')}}" class="img-icon" alt="User Image"/></span>
+                        <span><img src=""><img src="{{asset('/img/icon/cAire.png')}}" class="img-icon"
+                                               alt="User Image"/></span>
+                        <span><img src=""><img src="{{asset('/img/icon/cMusic.png')}}" class="img-icon"
+                                               alt="User Image"/></span>
+                        <span><img src=""><img src="{{asset('/img/icon/cPuertas.png')}}" class="img-icon"
+                                               alt="User Image"/></span>
+                        <span><img src=""><img src="{{asset('/img/icon/cMaleta.png')}}" class="img-icon"
+                                               alt="User Image"/></span>
+
+                    </div>
+                    <div class="text-center"><img src="{{asset('/img/car/car.png')}}" class="img-car-component"
+                              alt="User Image"/></div>
+                </div>
+                <div class="col-md-3"></div>
             </div>
             <div class="col-md-12">
                 <button class="btn btn-danger">@lang('message.go')</button>
@@ -53,9 +75,11 @@
         <div class="row">
             <div class="col-md-12 separator-line">
                 <h1 class="h1-theme">@lang('message.welcome')</h1>
-                <p class="p-theme">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at tellus sed massa dictum euismod.</p>
+                <p class="p-theme">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at tellus sed massa
+                    dictum euismod.</p>
                 <p class="p-theme">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <p class="p-theme">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at tellus sed massa dictum euismod.
+                <p class="p-theme">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at tellus sed massa
+                    dictum euismod.
                     Integer aliquet fermentum ornare. Proin commodo finibus nulla, ut tincidunt tellus pretium et.
                     Vestibulum luctus rhoncus vehicula. Aliquam tortor enim, convallis et sapien et, venenatis
                     consectetur eros. Vestibulum lacinia commodo consectetur. Mauris eleifend diam eget purus hendrerit,
@@ -64,19 +88,22 @@
                     Mauris eu porta ipsum. Quisque justo massa, malesuada sed enim id, ornare malesuada ipsum. Mauris
                     ultricies mollis ipsum, sed vulputate leo mattis iaculis. Nunc felis mauris, semper quis fringilla
                     eget, dapibus eu orci. Vivamus ornare est et varius dictum.</p>
-                <p class="p-theme">Phasellus vel venenatis lorem. Aenean magna felis, maximus ullamcorper accumsan mattis, dapibus ut
+                <p class="p-theme">Phasellus vel venenatis lorem. Aenean magna felis, maximus ullamcorper accumsan
+                    mattis, dapibus ut
                     metus. Morbi laoreet odio a elit tempor, sed consequat velit faucibus. Aliquam sed magna aliquet,
                     imperdiet metus vel, imperdiet turpis. Maecenas varius nunc vitae metus mollis iaculis. Quisque
                     faucibus orci eu erat porta, dapibus ullamcorper mi lobortis. Ut ut eros ante. Proin accumsan quis
                     erat sit amet faucibus. Curabitur accumsan quis odio ut ullamcorper. Suspendisse ultricies nibh
                     efficitur fringilla pellentesque. Maecenas sed convallis ex.</p>
-                <p class="p-theme">Phasellus vel venenatis lorem. Aenean magna felis, maximus ullamcorper accumsan mattis, dapibus ut
+                <p class="p-theme">Phasellus vel venenatis lorem. Aenean magna felis, maximus ullamcorper accumsan
+                    mattis, dapibus ut
                     metus. Morbi laoreet odio a elit tempor, sed consequat velit faucibus. Aliquam sed magna aliquet,
                     imperdiet metus vel, imperdiet turpis. Maecenas varius nunc vitae metus mollis iaculis. Quisque
                     faucibus orci eu erat porta, dapibus ullamcorper mi lobortis. Ut ut eros ante. Proin accumsan quis
                     erat sit amet faucibus. Curabitur accumsan quis odio ut ullamcorper. Suspendisse ultricies nibh
                     efficitur fringilla pellentesque. Maecenas sed convallis ex.</p>
-                <p class="p-theme">Phasellus vel venenatis lorem. Aenean magna felis, maximus ullamcorper accumsan mattis, dapibus ut
+                <p class="p-theme">Phasellus vel venenatis lorem. Aenean magna felis, maximus ullamcorper accumsan
+                    mattis, dapibus ut
                     metus. Morbi laoreet odio a elit tempor, sed consequat velit faucibus. Aliquam sed magna aliquet,
                     imperdiet metus vel, imperdiet turpis. Maecenas varius nunc vitae metus mollis iaculis. Quisque
                     faucibus orci eu erat porta, dapibus ullamcorper mi lobortis. Ut ut eros ante. Proin accumsan quis

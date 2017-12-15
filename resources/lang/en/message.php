@@ -22,5 +22,9 @@ return [
     'pickupdh' => 'pick up Date - Hour',
     'go' => 'Ir',
     'welcome' => 'welcome to wise rental !!!',
+    'returnsame' => 'return to same location',
+    'returndate' => 'return date  Hour',
+    'carmodel' => 'modelo de carro',
+    'code' => 'codigo',
 
 ];
