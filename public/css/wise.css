@@ -23,6 +23,64 @@
     text-transform: uppercase;
 }
 
+.content-bar-wise-head{
+    background-color: #8b141c;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: bolder;
+    padding:10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content-bar-wise-head-select{
+    background-color: #dbdbdb;
+    color: #ffffff;
+    font-family: "Roboto Mono Thin";
+    margin-top: 10px;
+    color: #2e3436;
+
+}
+
+.content-bar-wise-head-car{
+    background-color: #8c8c8c;
+    color: #ffffff;
+    font-family: "Roboto Mono Thin";
+    margin-top: 10px;
+    color: #2e3436;
+    padding-top: 10px;
+
+}
+
+.sel-car-content-bar{
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.sel-car-component{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #55B78A;
+    color: white;
+    font-weight: bold;
+}
+
+.sel-car-content-bar-p{
+    font-size: 12px;
+    text-align: left;
+}
+
+.sel-car-content-bar-p-car{
+    font-size: 15px;
+    text-align: left;
+    color: #fafafa;
+    font-family: "Roboto Mono";
+}
+
+
 .content-header-wise-action{
     background-color: #449868;
     color: #ffffff;
@@ -31,6 +89,12 @@
     padding:3px;
     border-radius: 5px;
     text-transform: capitalize;
+}
+
+.radius {
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 50px 20px;
 }
 
 .content-header-wise-step{

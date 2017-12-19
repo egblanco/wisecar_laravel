@@ -280,5 +280,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3"></div>
+    <div class="col-md-3">
+        @include('layouts.partials.contentbar')
+    </div>
 @endsection
