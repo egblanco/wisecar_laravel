@@ -106,3 +106,18 @@ label{
 .img-car-component{
     width: 200px;
 }
+
+.skin-blue .sidebar-menu > li:hover > a, .skin-blue .sidebar-menu > li.active > a {
+    color: #ffffff;
+    background: #4c966c;
+    border-left-color: #000000;
+}
+
+
+.skin-blue .sidebar-menu > li > a {
+    border-left: 3px solid transparent;
+    color: #272424;
+    text-align: right;
+    font-size: 18px;
+    margin-right: 27px;
+}
