@@ -253,6 +253,7 @@ function _init() {
       var window_height = $(window).height();
       var sidebar_height = $(".sidebar").height();
       var content = $(".content").height();
+      var contencontent_height = $(".contencontent_height").height();
       //Set the min-height of the content and sidebar based on the
       //the height of the document.
       if ($("body").hasClass("fixed")) {
@@ -261,7 +262,7 @@ function _init() {
         var postSetWidth;
         if (window_height >= sidebar_height) {
          // $(".content-wrapper, .right-side").css('min-height', window_height - neg);
-          $(".content-wrapper, .right-side").css('min-height', window_height +  sidebar_height  + content);
+          $(".content-wrapper, .right-side").css('min-height',+  sidebar_height + contencontent_height);
           postSetWidth = window_height - neg;
         } else {
           $(".content-wrapper, .right-side").css('min-height', sidebar_height);

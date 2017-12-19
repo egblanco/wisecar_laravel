@@ -7,7 +7,7 @@
 {{--@section('contentheader_description', 'Pagina de Inicio')--}}
 
 @section('main-content')
-    <div class="col-md-9">
+    <div class="col-md-9 contencontent_height">
         <form>
             <div class="col-md-6">
                 <div class="form-group">
@@ -45,7 +45,7 @@
                     <input class="form-control" type="text">
                 </div>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 margin-bottom">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <div class="top-car-component">
@@ -63,11 +63,178 @@
 
                     </div>
                     <div class="text-center"><img src="{{asset('/img/car/car.png')}}" class="img-car-component"
-                              alt="User Image"/></div>
+                                                  alt="User Image"/></div>
                 </div>
                 <div class="col-md-3"></div>
             </div>
+            <hr class="hr-theme">
+            <div class="col-md-12 margin-bottom">
+                <div class="box box-success">
+                    <div class="box-header">
+                        <h3 class="box-title">Seguros</h3>
+
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                        class="fa fa-minus"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <table class="table table-condensed">
+                            <tbody>
+                            <tr>
+                                <th>Seguros</th>
+                                <th>USD</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Lorem Ipsun</td>
+
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Yech lk</td>
+
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+            </div>
+            <div class="col-md-12 margin-bottom">
+                <div class="box box-success">
+                    <div class="box-header">
+                        <h3 class="box-title">Accesorios</h3>
+
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                        class="fa fa-minus"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <table class="table table-condensed">
+                            <tbody>
+                            <tr>
+                                <th>Accesorios </th>
+                                <th>(Precio por dia) USD</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Lorem I</td>
+
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Strucn lk</td>
+
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+            </div>
             <div class="col-md-12">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-red"><i class="ion ion-ios-gear-outline"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Insurances</span>
+                            <span class="info-box-number">34<small>$</small></span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-aqua-active"><i class="fa fa-fw fa-list-alt"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Sub Total</span>
+                            <span class="info-box-number">120<small>$</small></span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+
+                <!-- fix for small devices only -->
+                <div class="clearfix visible-sm-block"></div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-green-active"><i class="ion ion-ios-calculator-outline"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">States Tax</span>
+                            <span class="info-box-number">340<small>$</small></span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-green-active"><i class="ion ion-ios-cart"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Total of USD</span>
+                            <span class="info-box-number">56<small>$</small></span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <div class="col-md-12 margin-bottom">
+                <div class="box box-success">
+                    <div class="box-header">
+                        <h3 class="box-title">Datos Pesonales</h3>
+
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                        class="fa fa-minus"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <table class="table table-condensed">
+                            <tbody>
+                            <tr>
+                                <th>Seguros</th>
+                                <th>USD</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Lorem Ipsun</td>
+
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Yech lk</td>
+
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+            </div>
+            <div class="col-md-12 margin-bottom">
                 <button class="btn btn-danger">@lang('message.go')</button>
             </div>
         </form>
