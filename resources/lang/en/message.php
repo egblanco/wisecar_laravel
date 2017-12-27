@@ -19,12 +19,14 @@ return [
     'cancel' => 'cancel',
     'step' => 'step',
     'pickup' => 'pick up location',
-    'pickupdh' => 'pick up Date - Hour',
+    'pickupdh' => 'pick up Date',
+    'pickupdhh' => 'Hour',
     'go' => 'Ir',
     'welcome' => 'welcome to wise rental !!!',
     'returnsame' => 'return to same location',
-    'returndate' => 'return date  Hour',
-    'carmodel' => 'modelo de carro',
+    'returndate' => 'return date',
+    'returnhour' => 'Hour',
+    'carmodel' => 'car model',
     'code' => 'codigo',
 
 ];

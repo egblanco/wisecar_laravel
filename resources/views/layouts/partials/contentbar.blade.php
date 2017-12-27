@@ -1,5 +1,5 @@
 <div class="col-md-12 content-bar-wise-head">
-    LAST MINUTTE
+    LAST MINUTE
 </div>
 <div class="col-md-12 content-bar-wise-head-select">
     <div class="sel-car-content-bar">SELECT YOUR CAR</div>

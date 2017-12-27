@@ -19,7 +19,7 @@
         @endif
 
         <div class="row center-block text-center">
-            <img src="img/icon114x1142.png">
+            <img src="{{asset('/img/icon114x1142.png')}}">
         </div>
 
 

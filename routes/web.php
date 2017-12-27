@@ -20,6 +20,6 @@ Route::get('/panel', function () {
     return view('app');
 });
 
-Route::get('/dashboard', function () {
-    return view('welcome');
-});
+
+Route::get('/{locale}', 'CarController@index');
+
