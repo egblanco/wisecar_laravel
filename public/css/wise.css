@@ -159,12 +159,24 @@ label{
 }
 
 .content-wrapper {
-    min-height: 100%;
+    height:auto;
 }
+
+#wrapper{height:auto;}
 
 .top-car-component{
     background-color: #a9a9a9;
 
+}
+.img-icon + .tooltip > .tooltip-inner {background-color: #8b141c; font-size: 20px;font-family: "Roboto Mono Thin"; }
+.img-icon + .tooltip > .tooltip-arrow { border-bottom-color:#8b141c; }
+
+.tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #8b141c;
 }
 
 .img-icon{

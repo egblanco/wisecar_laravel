@@ -22,4 +22,5 @@ Route::get('/panel', function () {
 
 
 Route::get('/{locale}', 'CarController@index');
+Route::post('/get_car_by_id/', 'CarController@getCarById');
 

@@ -19,6 +19,7 @@ return [
     'cancel' => 'cancel',
     'step' => 'step',
     'pickup' => 'pick up location',
+    'dropoff' => 'Drop-off location',
     'pickupdh' => 'pick up Date',
     'pickupdhh' => 'Hour',
     'go' => 'Ir',

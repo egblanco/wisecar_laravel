@@ -46,15 +46,13 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <div class="form-group">
-                        <label>@lang('message.carmodel')</label>
-                        <select class="form-control" id="carmodel" name="carmodel">
-                            <option value="0">---</option>
-                            @foreach ($autos as $auto)
-                                <option value="{{$auto->id}}">{{$auto->modelo}}</option>
-                            @endforeach
-                        </select>
-                    </div>
+                    <label>@lang('message.dropoff')</label>
+                    <select class="form-control" name="dropoff" id="dropoff">
+                        <option value="0">Otro Sitio</option>
+                        @foreach ($lugares as $lugar)
+                            <option value="{{$lugar->id}}">{{$lugar->nombre}}</option>
+                        @endforeach
+                    </select>
                 </div>
             </div>
 
@@ -85,13 +83,27 @@
                 </div>
             </div>
 
-            <div class="col-md-6" hidden >
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label>@lang('message.carmodel')</label>
+                        <select class="form-control" id="carmodel" name="carmodel" disabled>
+                            <option value="0">---</option>
+                            @foreach ($autos as $auto)
+                                <option value="{{$auto->id}}">{{$auto->modelo}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" hidden>
                 <div class="form-group">
                     <label>@lang('message.code')</label>
                     <input class="form-control" type="text">
                 </div>
             </div>
-            <div class="col-sm-offset-4">
+            <div class="col-sm-offset-4" hidden>
 
                 <div class="form-group pull-left">
                     <div class="checkbox">
@@ -109,26 +121,20 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <div class="top-car-component">
-                        <span><img src=""><img src="{{asset('/img/icon/cUser.png')}}" class="img-icon"
-                                               alt="User Image"/></span>
-                        <span><img src=""><img src="{{asset('/img/icon/cDir.png')}}" class="img-icon" alt="User Image"/></span>
-                        <span><img src=""><img src="{{asset('/img/icon/cAire.png')}}" class="img-icon"
-                                               alt="User Image"/></span>
-                        <span><img src=""><img src="{{asset('/img/icon/cMusic.png')}}" class="img-icon"
-                                               alt="User Image"/></span>
-                        <span><img src=""><img src="{{asset('/img/icon/cPuertas.png')}}" class="img-icon"
-                                               alt="User Image"/></span>
-                        <span><img src=""><img src="{{asset('/img/icon/cMaleta.png')}}" class="img-icon"
-                                               alt="User Image"/></span>
+                        <span id="img_user"></span>
+                        <span id="img_cdir"></span>
+                        <span id="img_aire"></span>
+                        <span id="img_music"></span>
+                        <span id="img_puertas"></span>
+                        <span id="img_maleta"></span>
 
                     </div>
-                    <div class="text-center"><img src="{{asset('/img/car/car.png')}}" class="img-car-component"
-                                                  alt="User Image"/></div>
+                    <div class="text-center" id="img_car"></div>
                 </div>
                 <div class="col-md-3"></div>
             </div>
             <hr class="hr-theme">
-            <div class="col-md-12 margin-bottom" hidden>
+            <div class="col-md-12 margin-bottom hidden" id="section_seguros">
                 <div class="box box-success">
                     <div class="box-header">
                         <h3 class="box-title">Seguros</h3>
@@ -144,8 +150,8 @@
                         <table class="table table-condensed">
                             <tbody>
                             <tr>
-                                <th width="50%">Seguros</th>
-                                <th width="25%">USD</th>
+                                <th width="50%">Seguro</th>
+                                <th width="25%">MXN</th>
                                 <th width="25%">Seleccionar</th>
                             </tr>
 
@@ -158,7 +164,9 @@
                                             <label>
                                                 <input type="checkbox"
                                                        id="seguro_{{$seguro->seguro_translation[0]->translatable_id}}"
-                                                       name="seguro_{{$seguro->seguro_translation[0]->translatable_id}}">
+                                                       name="seguro_{{$seguro->seguro_translation[0]->translatable_id}}"
+                                                       rel="{{$seguro->articulo->precio}}"
+                                                       class="checkbox_seguro">
                                                 <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
                                             </label>
                                         </div>
@@ -174,7 +182,7 @@
                 </div>
             </div>
 
-            <div class="col-md-12 margin-bottom" hidden>
+            <div class="col-md-12 margin-bottom hidden" id="section_accesorios">
                 <div class="box box-success">
                     <div class="box-header">
                         <h3 class="box-title">Accesorios</h3>
@@ -191,7 +199,7 @@
                             <tbody>
                             <tr>
                                 <th width="50%">Accesorios</th>
-                                <th width="25%">USD</th>
+                                <th width="25%">MXN</th>
                                 <th width="25%">Seleccionar</th>
                             </tr>
 
@@ -204,7 +212,9 @@
                                             <label>
                                                 <input type="checkbox"
                                                        id="accesorio_{{$accesorio->accesorio_translation[0]->translatable_id}}"
-                                                       name="accesorio_{{$accesorio->accesorio_translation[0]->translatable_id}}">
+                                                       name="accesorio_{{$accesorio->accesorio_translation[0]->translatable_id}}"
+                                                       rel="{{$accesorio->articulo->precio}}"
+                                                       class="checkbox_accesorio">
                                                 <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
                                             </label>
                                         </div>
@@ -220,14 +230,15 @@
                 </div>
             </div>
 
-            <div class="col-md-12" hidden>
+            <div class="col-md-12 hidden" id="section_resumen">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="info-box">
                         <span class="info-box-icon bg-red"><i class="ion ion-ios-gear-outline"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">Insurances</span>
-                            <span class="info-box-number" id="unsurance_value">34<small>$</small></span>
+                            <span class="info-box-text">Insurances & Accesories</span>
+                            <span class="info-box-number" id="insurance_value">0<small>$</small></span>
+                            <input id="insurance_value_input" name="insurance_value_input" hidden>
                         </div>
                         <!-- /.info-box-content -->
                     </div>
@@ -240,7 +251,8 @@
 
                         <div class="info-box-content">
                             <span class="info-box-text">Sub Total</span>
-                            <span class="info-box-number" id="subtotal_value">120<small>$</small></span>
+                            <span class="info-box-number" id="subtotal_value">0<small>$</small></span>
+                            <input id="subtotal_value_input" name="subtotal_value_input" hidden>
                         </div>
                         <!-- /.info-box-content -->
                     </div>
@@ -258,7 +270,8 @@
 
                         <div class="info-box-content">
                             <span class="info-box-text">States Tax</span>
-                            <span class="info-box-number" id="states_tax_value">340<small>$</small></span>
+                            <span class="info-box-number" id="states_tax_value">16<small>%</small></span>
+                            <input id="states_tax_value_input" name="states_tax_value_input" hidden>
                         </div>
                         <!-- /.info-box-content -->
                     </div>
@@ -270,8 +283,9 @@
                         <span class="info-box-icon bg-green-active"><i class="ion ion-ios-cart"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">Total of USD</span>
-                            <span class="info-box-number" id="total_value">56<small>$</small></span>
+                            <span class="info-box-text">Total of MXN</span>
+                            <span class="info-box-number" id="total_value">0<small>$</small></span>
+                            <input id="total_value_input" name="total_value_input" hidden>
                         </div>
                         <!-- /.info-box-content -->
                     </div>
@@ -281,8 +295,15 @@
             </div>
 
 
+            <div class="col-md-12 margin-bottom hidden" id="section_button_personales">
+                <div class="col-md-offset-5">
+                    <a class="btn btn-app" id="show_personales">
+                        <i class="fa fa-user"></i> Datos Personales
+                    </a>
+                </div>
+            </div>
 
-            <div class="col-md-12 margin-bottom" hidden>
+            <div class="col-md-12 margin-bottom hidden" id="section_datos_personales">
                 <div class="col-md-12 content-header-wise margin-bottom">
                     <div class="col-md-5">Datos Personales</div>
                 </div>
@@ -295,7 +316,8 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Apellidos</label>
-                        <input type="text" class="form-control" id="apellidos" name="appellidos" placeholder="Enter ...">
+                        <input type="text" class="form-control" id="apellidos" name="appellidos"
+                               placeholder="Enter ...">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -344,7 +366,8 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Confirmacion Correo</label>
-                        <input type="text" class="form-control" placeholder="Enter ..." id="confirm_correo" name="confirm_correo">
+                        <input type="text" class="form-control" placeholder="Enter ..." id="confirm_correo"
+                               name="confirm_correo">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -483,6 +506,7 @@
                 showClear: true,
                 //use24hours: true
             });
+            $('#pickupdhh').val('12:00 AM')
 
 
         })
@@ -505,7 +529,7 @@
                 showClear: true,
                 //use24hours: true
             });
-
+            $('#returnhour').val('12:00 AM')
 
         })
     </script>

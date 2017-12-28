@@ -39,13 +39,13 @@
             {{--<li class="header">{{ trans('adminlte_lang::message.header') }}</li>--}}
             <!-- Optionally, you can add icons to the links -->
             <li class="active"><a href="{{ url('home') }}"><i class='fa fa-link'></i> <span>HOME</span></a></li>
-            <li><a href="#" class="menu-font"><span>CARS</span></a></li>
-            <li><a href="#"><span>RATES</span></a></li>
-            <li><a href="#"><span>WISE DEALS</span></a></li>
-            <li><a href="#"><span>FAQS</span></a></li>
-            <li><a href="#"><span>TRAVEL TRIPS</span></a></li>
-            <li><a href="#"><span>TESTIMONIALS</span></a></li>
-            <li><a href="#"><span>CONTACT US</span></a></li>
+            <li hidden><a href="#" class="menu-font"><span>CARS</span></a></li>
+            <li hidden><a href="#"><span>RATES</span></a></li>
+            <li hidden><a href="#"><span>WISE DEALS</span></a></li>
+            <li hidden><a href="#"><span>FAQS</span></a></li>
+            <li hidden><a href="#"><span>TRAVEL TRIPS</span></a></li>
+            <li hidden><a href="#"><span>TESTIMONIALS</span></a></li>
+            <li hidden><a href="#"><span>CONTACT US</span></a></li>
         </ul><!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->
