@@ -18,7 +18,9 @@ class Auto extends Eloquent
 
     public function ofertas()
     {
-        return $this->belongsToMany('App\Oferta', 'oferta_auto', 'id_auto', 'id_oferta')->withPivot('precio', 'semanal');
+        return $this->belongsToMany('App\Oferta', 'oferta_auto', 'id_auto', 'id_oferta')
+            ->withPivot('precio', 'semanal')
+            ->where('oferta.activa', '=', 1);
     }
 
 

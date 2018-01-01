@@ -15,7 +15,7 @@
                 <div class="col-md-4"><span class="content-header-wise-action">@lang('message.view')</span>
                     <span class="content-header-wise-action">@lang('message.modify')</span>
                     <span class="content-header-wise-action">@lang('message.cancel')</span></div>
-                <div class="col-md-3">
+                <div class="col-md-3" hidden>
                     <span class="content-header-wise-step">@lang('message.step')</span>
                     <span class="content-header-wise-step">1</span>
                     <span class="content-header-wise-step">2</span>

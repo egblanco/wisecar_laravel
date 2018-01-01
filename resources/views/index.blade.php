@@ -8,6 +8,33 @@
 @section('main-content')
     <div class="col-md-9 contencontent_height">
         <form>
+            <div class="col-md-12">
+                <ul class="timeline timeline-horizontal">
+                    <li class="timeline-item">
+                        <div class="timeline-badge green"><i class="glyphicon glyphicon-calendar"></i></div>
+
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-badge red" style="left: 100%;"><i
+                                    class="glyphicon glyphicon-road"></i></div>
+
+                    </li>
+
+                    <li class="timeline-item">
+                        <div class="timeline-badge green" style="left: 100%;"><i
+                                    class="glyphicon glyphicon-user"></i></div>
+
+                    </li>
+
+                    <li class="timeline-item">
+                        <div class="timeline-badge red" style="left: 100%;"><i
+                                    class="glyphicon glyphicon-check"></i></div>
+
+                    </li>
+
+
+                </ul>
+            </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label>@lang('message.pickup')</label>
@@ -87,7 +114,7 @@
                 <div class="form-group">
                     <div class="form-group">
                         <label>@lang('message.carmodel')</label>
-                        <select class="form-control" id="carmodel" name="carmodel" disabled>
+                        <select class="form-control" id="carmodel" name="carmodel">
                             <option value="0">---</option>
                             @foreach ($autos as $auto)
                                 <option value="{{$auto->id}}">{{$auto->modelo}}</option>
@@ -96,13 +123,16 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6" hidden>
+            <div class="col-md-6">
                 <div class="form-group">
-                    <label>@lang('message.code')</label>
-                    <input class="form-control" type="text">
+                    <div class="form-group">
+                        <label class="font-red" style="padding-top: 30px;     font-size: 17px;"
+                               id="cantidad_dias"></label>
+                    </div>
                 </div>
             </div>
+
+
             <div class="col-sm-offset-4" hidden>
 
                 <div class="form-group pull-left">
@@ -127,9 +157,11 @@
                         <span id="img_music"></span>
                         <span id="img_puertas"></span>
                         <span id="img_maleta"></span>
-
                     </div>
                     <div class="text-center" id="img_car"></div>
+                    <div class="text-center font-red" id="precio_diario">Precio Diario: <span class="bg-red-font">100<small>$</small></span>
+                    </div>
+                    <div class="text-center font-green" id="precio_semanal"></div>
                 </div>
                 <div class="col-md-3"></div>
             </div>
