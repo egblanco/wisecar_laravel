@@ -50,26 +50,28 @@ class CarController extends Controller
     public function getCarById(Request $request)
     {
         #var_dump($request);
-        $locale = App::getLocale();
-        $data = [];
-        $element = [];
+        #$locale = App::getLocale();
+        #$data = [];
+        #$element = [];
+
         $id = $request->id;
-        $locale = $request->idioma;
-        $auto = Auto::find($id);
-        $auto_oferta = Auto::with('ofertas')->get()->where('id', '=', $id)->first();
-        #var_dump($auto_oferta->ofertas);
+        var_dump($id);
+        #$locale = $request->idioma;
+        #$auto = Auto::find($id);
+        #$auto_oferta = Auto::with('ofertas')->get()->where('id', '=', $id)->first();
+        ###var_dump($auto_oferta->ofertas);
         #$auto['precio'] = 0;
         #$auto['semanal'] = 0;
-        $transmision_translate = TransmisionTranslation::where('translatable_id', '=', $auto->id_transmision)
-            ->where('locale', $locale)
-            ->get()->first();
-        $element['locale'] = $locale;
-        $element['auto'] = $auto;
-        $element['auto_oferta'] = $auto_oferta;
-        $element['transmision'] = $transmision_translate;
-        $data['data'] = $element;
+        #$transmision_translate = TransmisionTranslation::where('translatable_id', '=', $auto->id_transmision)
+        #    ->where('locale', $locale)
+        #    ->get()->first();
+        #$element['locale'] = $locale;
+        #$element['auto'] = $auto;
+        #$element['auto_oferta'] = $auto_oferta;
+        #$element['transmision'] = $transmision_translate;
+        #$data['data'] = $element;
         #$data['auto'] = Auto::with('transmision')->whereIn('id', $id)->get();
-        return response()->json($element);
+        #return response()->json($element);
     }
 
     public function getPrecioAlquilerAutoByDateRange(Request $request)
